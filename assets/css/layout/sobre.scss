@@ -1,0 +1,26 @@
+.sobre{
+    background-color: $cor-fundo;
+    padding: 2% 15% 15% 15%;
+    margin-top: -0.1em;
+
+    h3{
+        font: normal normal bold 14px/60px Montserrat;
+        color: $cor-destaque;
+        margin-bottom: -2em;
+    }
+
+    h2{
+        font: normal normal bold 22px/30px Montserrat;
+    }
+
+    p{
+        font: normal normal normal 14px/30px Roboto;
+    }
+}
+
+@media #{$mq_tablet}{
+    .sobre{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

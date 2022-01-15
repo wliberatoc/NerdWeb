@@ -1,0 +1,45 @@
+.fale-conosco{         
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 91%;
+    height: auto;
+    margin: -10% 4% 0 5%;
+    padding: 8% 0;
+    background: linear-gradient($cor-sobreposicao, $cor-sobreposicao),  url('../img/group-people-working-out-business-plan-office.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 25px -25px $cor-destaque;
+}
+
+.fale-conosco-titulo{
+    display: block;
+    text-align: center;
+    h3{
+        font: normal normal bold 24px/32px Montserrat;
+        color: $cor-branca;
+    }
+}
+
+.fale-conosco-botao{
+    display: block;
+    text-align: center; 
+    button{
+        @include btn-fale-conosco;
+    }
+}
+
+@media #{$mq-mobile}{
+    .fale-conosco{
+        width: 110%;
+        background-position: center left;
+        margin: -10% 0 0 -8%;
+        padding: 30% 0 10% 5%;
+        box-shadow: 0 -25px $cor-destaque;
+    }
+    
+    .fale-conosco-titulo{
+        padding-right: 5%;
+    }
+}

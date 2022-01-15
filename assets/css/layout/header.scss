@@ -1,0 +1,114 @@
+.header{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em;
+}
+
+.logo h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.5em;
+    background: -webkit-linear-gradient(left, $cor-preta 47.6%, $cor-destaque 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.menu{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    display: flex;
+    list-style: none;
+    gap: 1.5em;
+    align-items: center;
+    a{
+        font-size: 1em;
+        &:hover {
+            font-weight: bold;
+            color: $cor-destaque;
+            text-decoration: underline solid $cor-destaque;
+        }
+        &:active{
+            font-weight: bold;
+        }
+    }
+
+    button{
+        @include btn-fale-conosco;
+    }
+}
+
+#ativo{
+    font-weight: bold;
+}
+
+@media #{$mq_tablet}{
+    .header{
+        height: 50px;
+    }
+
+    .menu{ 
+        display: none;
+        position: absolute;
+        width: auto;
+        height: auto;
+        top: 50px;
+        right: 0;
+        background: $cor-fundo-mobile-menu;
+        z-index: 1000;
+        a{
+            gap: 0;
+        }
+        
+    }
+    
+    #nav.active .menu{
+        display: flex;
+        flex-direction: column;
+        padding: 1em 0.5em;
+
+    }
+
+    #btn-menu{
+        display: flex;
+        padding: 0.3em 1em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 1em;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.7em;
+    }
+
+    #hamburguer{
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+        color: $cor-preta;
+
+        &::after, &::before{
+            content: '';
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: currentColor;
+            margin-top: 5px;
+            transition: 0.4s;
+        }
+    }
+
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+
+        &::before{
+            transform: rotate(135deg);
+        }
+        &::after{
+            transform: rotate(-135deg);
+            margin-top: -2.0px;
+        }
+    }
+
+}

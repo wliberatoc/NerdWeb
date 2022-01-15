@@ -1,0 +1,29 @@
+@mixin destaque-btn {
+    font: normal normal medium 14px/28px Roboto;
+    border: 0.5px solid $cor-preta;
+    border-radius: 2px;
+    margin: 0.2em 1em 0 0;
+    &:hover{
+        text-decoration: underline;
+        font-size: 1.01em;
+        font-weight: bold;
+        transition: 0.4s ease;
+    }
+
+}
+
+@mixin btn-fale-conosco{
+    font: normal normal medium 14px/28px Roboto;
+    color: $cor-branca;
+    background-color: $cor-destaque;
+    padding: 0.5em 1.5em;
+    border-radius: 3px;
+    border: none;
+    
+    &:hover{
+        text-decoration: underline;
+        font-weight: bold;
+        transition: 0.4s ease;
+        font-size: 1.1em;
+    }
+}

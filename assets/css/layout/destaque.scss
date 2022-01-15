@@ -1,0 +1,69 @@
+.destaque{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.destaque-texto {
+    width: 35%;
+    padding-left: 5em;
+    h2{
+        font: normal normal 800 25px/37px Montserrat;
+    }
+    a{
+        color: $cor-destaque;
+        text-decoration: underline 2px $cor-destaque;
+    }
+    p{
+        font: normal normal bold 14px/17px Roboto;
+    }
+    .destaque-fale-conosco{
+        font: normal normal medium 14px/28px Roboto;
+        background-color: $cor-preta;
+        color: $cor-branca;
+        @include destaque-btn;
+        padding: 0.3em 1.4em;
+    }
+    .destaque-saiba-mais{
+        font: normal normal medium 14px/28px Roboto;
+        @include destaque-btn;
+        padding: 0.3em 2em;
+    }
+}
+
+.destaque-imagem{
+    width: 50%;
+    .destaque-foto{
+        width: 100%;
+    }
+}
+
+@media #{$mq_tablet}{
+    .destaque{
+        display: block;
+        align-items: center;
+    } 
+
+    .destaque-texto{
+        width: 100%;
+        align-items: center;
+        padding-left: 1em;
+    }
+    
+    .destaque-imagem{
+        width: 100%;
+        margin-top: 5%;
+    }
+
+}
+
+@media #{$mq-mobile}{
+    .destaque-texto{
+        .destaque-fale-conosco, .destaque-saiba-mais{
+            width: 95%;
+            margin-right: 5%;
+            margin-top: 6px;
+           padding: 1em;
+        }
+    }
+}
