@@ -1,0 +1,41 @@
+body, ul{
+    margin: 0%;
+}
+
+a{
+    font: normal normal normal 14px/28px Montserrat;
+    color: $cor-texto;
+    text-decoration: none;
+}
+
+
+h1{
+    font: normal normal 800 25px/37px Montserrat;
+}
+
+
+h2{
+    font: normal normal bold 22px/30px Montserrat;
+}
+
+h3{
+    font: normal normal bold 14px/60px Montserrat;
+    color: $cor-destaque;
+    margin-bottom: -3.0em;
+}
+
+h4{
+    font: normal normal bold 22px/60px Montserrat;
+    margin-bottom: -1em;
+}
+
+
+button{
+    font: normal normal normal 14px/28px Montserrat;
+}
+
+p{
+    font: normal normal bold 14px/17px Roboto;
+    color: $cor-texto;
+}
+

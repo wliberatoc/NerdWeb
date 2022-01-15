@@ -1,0 +1,8 @@
+footer{
+    height: 116px;
+    width: 100%;
+    background-color: #1d1c1c;
+    @media #{$mq-mobile}{
+        height: 74px;
+    }
+}

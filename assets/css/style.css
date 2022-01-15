@@ -356,6 +356,36 @@ td,
 th {
   padding: 0; }
 
+body, ul {
+  margin: 0%; }
+
+a {
+  font: normal normal normal 14px/28px Montserrat;
+  color: #443f3f;
+  text-decoration: none; }
+
+h1 {
+  font: normal normal 800 25px/37px Montserrat; }
+
+h2 {
+  font: normal normal bold 22px/30px Montserrat; }
+
+h3 {
+  font: normal normal bold 14px/60px Montserrat;
+  color: #AB8A3C;
+  margin-bottom: -3.0em; }
+
+h4 {
+  font: normal normal bold 22px/60px Montserrat;
+  margin-bottom: -1em; }
+
+button {
+  font: normal normal normal 14px/28px Montserrat; }
+
+p {
+  font: normal normal bold 14px/17px Roboto;
+  color: #443f3f; }
+
 .header {
   height: 90px;
   display: flex;
@@ -364,30 +394,23 @@ th {
   padding: 0 3em; }
 
 .logo h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 1.5em;
+  font-size: 1.3em;
   background: -webkit-linear-gradient(left, #000 47.6%, #AB8A3C 0%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 .menu {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   display: flex;
   list-style: none;
   gap: 1.5em;
   align-items: center; }
-  .menu a {
-    font-size: 1em; }
-    .menu a:hover {
-      font-weight: bold;
-      color: #AB8A3C;
-      text-decoration: underline solid #AB8A3C; }
-    .menu a:active {
-      font-weight: bold; }
+  .menu a:hover {
+    font-weight: bold;
+    color: #AB8A3C;
+    text-decoration: underline solid #AB8A3C; }
+  .menu a:active {
+    font-weight: bold; }
   .menu button {
-    font: normal normal medium 14px/28px Roboto;
     color: #fff;
     background-color: #AB8A3C;
     padding: 0.5em 1.5em;
@@ -423,17 +446,6 @@ th {
     flex-direction: column;
     padding: 1em 0.5em; }
 
-  #btn-menu {
-    display: flex;
-    padding: 0.3em 1em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 1em;
-    border: none;
-    background: none;
-    cursor: pointer;
-    gap: 0.7em; }
-
   #hamburguer {
     display: block;
     border-top: 2px solid;
@@ -463,39 +475,33 @@ th {
 .destaque-texto {
   width: 35%;
   padding-left: 5em; }
-  .destaque-texto h2 {
-    font: normal normal 800 25px/37px Montserrat; }
   .destaque-texto a {
+    font: normal normal 800 25px/37px Montserrat;
     color: #AB8A3C;
     text-decoration: underline 2px #AB8A3C; }
-  .destaque-texto p {
-    font: normal normal bold 14px/17px Roboto; }
-  .destaque-texto .destaque-fale-conosco {
-    font: normal normal medium 14px/28px Roboto;
-    background-color: #000;
-    color: #fff;
-    font: normal normal medium 14px/28px Roboto;
-    border: 0.5px solid #000;
-    border-radius: 2px;
-    margin: 0.2em 1em 0 0;
-    padding: 0.3em 1.4em; }
-    .destaque-texto .destaque-fale-conosco:hover {
-      text-decoration: underline;
-      font-size: 1.01em;
-      font-weight: bold;
-      transition: 0.4s ease; }
-  .destaque-texto .destaque-saiba-mais {
-    font: normal normal medium 14px/28px Roboto;
-    font: normal normal medium 14px/28px Roboto;
-    border: 0.5px solid #000;
-    border-radius: 2px;
-    margin: 0.2em 1em 0 0;
-    padding: 0.3em 2em; }
-    .destaque-texto .destaque-saiba-mais:hover {
-      text-decoration: underline;
-      font-size: 1.01em;
-      font-weight: bold;
-      transition: 0.4s ease; }
+    .destaque-texto a .destaque-fale-conosco {
+      background-color: #000;
+      color: #fff;
+      border: 0.5px solid #000;
+      border-radius: 2px;
+      margin: 0.1em 1em 0 0;
+      padding: 0.1em 1.5em; }
+      .destaque-texto a .destaque-fale-conosco:hover {
+        text-decoration: underline;
+        font-size: 0.6em;
+        font-weight: bold;
+        transition: 0.4s ease; }
+    .destaque-texto a .destaque-saiba-mais {
+      border: 0.5px solid #000;
+      border-radius: 2px;
+      margin: 0.1em 1em 0 0;
+      padding: 0.1em 2.5em;
+      color: #000; }
+      .destaque-texto a .destaque-saiba-mais:hover {
+        text-decoration: underline;
+        font-size: 0.6em;
+        font-weight: bold;
+        transition: 0.4s ease; }
 
 .destaque-imagem {
   width: 50%; }
@@ -516,7 +522,7 @@ th {
     width: 100%;
     margin-top: 5%; } }
 @media (max-width: 500px) {
-  .destaque-texto .destaque-fale-conosco, .destaque-texto .destaque-saiba-mais {
+  .destaque-fale-conosco, .destaque-saiba-mais {
     width: 95%;
     margin-right: 5%;
     margin-top: 6px;
@@ -525,14 +531,6 @@ th {
   background-color: #EFF1F2;
   padding: 2% 15% 15% 15%;
   margin-top: -0.1em; }
-  .sobre h3 {
-    font: normal normal bold 14px/60px Montserrat;
-    color: #AB8A3C;
-    margin-bottom: -2em; }
-  .sobre h2 {
-    font: normal normal bold 22px/30px Montserrat; }
-  .sobre p {
-    font: normal normal normal 14px/30px Roboto; }
 
 @media (max-width: 760px) {
   .sobre {
@@ -555,15 +553,13 @@ th {
 .fale-conosco-titulo {
   display: block;
   text-align: center; }
-  .fale-conosco-titulo h3 {
-    font: normal normal bold 24px/32px Montserrat;
+  .fale-conosco-titulo h2 {
     color: #fff; }
 
 .fale-conosco-botao {
   display: block;
   text-align: center; }
   .fale-conosco-botao button {
-    font: normal normal medium 14px/28px Roboto;
     color: #fff;
     background-color: #AB8A3C;
     padding: 0.5em 1.5em;
@@ -585,11 +581,44 @@ th {
 
   .fale-conosco-titulo {
     padding-right: 5%; } }
-body, ul {
-  margin: 0%; }
+.diferenciais-titulos {
+  text-align: center;
+  margin: 1.2em 0; }
 
-a {
-  color: #443f3f;
-  text-decoration: none; }
+.diferenciais-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 2%;
+  padding: 1%;
+  margin: 2% 10%; }
+
+.diferencial {
+  margin: 2% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 22%;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.14); }
+  .diferencial .icon {
+    margin-top: 10px;
+    width: 4em;
+    height: 4em;
+    background-color: #AB8A3C;
+    border-radius: 100px; }
+
+@media (max-width: 786px) {
+  .diferencial {
+    width: 40%;
+    padding: 0.5em; } }
+footer {
+  height: 116px;
+  width: 100%;
+  background-color: #1d1c1c; }
+  @media (max-width: 500px) {
+    footer {
+      height: 74px; } }
 
 /*# sourceMappingURL=style.css.map */
