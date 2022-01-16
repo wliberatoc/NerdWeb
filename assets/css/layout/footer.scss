@@ -1,8 +1,41 @@
-footer{
+.footer{    
+    display: flex;
     height: 116px;
     width: 100%;
     background-color: #1d1c1c;
-    @media #{$mq-mobile}{
+}
+
+.logo-container{
+    @include footer-align;
+
+    .logo-rodape h1 {
+        font-size: 1.3em;
+        color: $cor-branca;
+      }
+}
+
+.footer-social-icons{
+    @include footer-align;
+    padding-right: 5%;
+    gap: 0.7em;
+    
+    .footer-social-icon{
+        width: 2.2em;
+        height: 2.2em;
+        border: 2px solid $cor-branca;
+        border-radius: 100%;
+        svg{
+            align-items: center;
+            width: 50%;
+            height: 50%;
+            padding: 25%;
+            color: $cor-branca;      
+        }
+    }
+}
+
+@media #{$mq-mobile}{
+    .footer{
         height: 74px;
     }
 }

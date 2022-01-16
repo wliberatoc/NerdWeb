@@ -25,3 +25,19 @@
         font-size: 1.1em;
     }
 }
+
+@mixin svg-icon {
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    padding: 1em;
+    color: $cor-branca;
+}
+
+@mixin footer-align {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
