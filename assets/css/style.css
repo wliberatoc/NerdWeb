@@ -379,6 +379,11 @@ h4 {
   font: normal normal bold 22px/60px Montserrat;
   margin-bottom: -1em; }
 
+h5 {
+  font: normal normal 600 12px/26px Montserrat;
+  color: #AB8A3C;
+  margin-bottom: -1em; }
+
 button {
   font: normal normal normal 14px/28px Montserrat; }
 
@@ -619,6 +624,59 @@ p {
   .diferencial {
     width: 40%;
     padding: 0.5em; } }
+.blog {
+  background-color: #EFF1F2;
+  padding: 3% 0 3% 3%; }
+
+.carousel-slider {
+  --carousel-slider-max-width: 1200px;
+  --carousel-slider-width: 520px;
+  --carousel-slider-height: 380px;
+  --carousel-slider-navigation-color: #fff;
+  --carousel-slider-pagination-color: #fff;
+  padding: 4%; }
+
+.carousel-slider {
+  --swiper-navigation-color: var(--carousel-slider-navigation-color);
+  --swiper-pagination-color: var(--carousel-slider-pagination-color);
+  --swiper-pagination-bullet-inactive-color: var( --carousel-slider-pagination-color );
+  position: relative;
+  width: var(--carousel-slider-max-width);
+  margin: 0 auto;
+  max-width: 100%;
+  overflow: hidden; }
+
+carousel-slider-animate-opacity {
+  display: flex;
+  gap: 0.7em; }
+
+.card {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  height: auto;
+  background-color: #fff; }
+  .card .card-image {
+    text-align: center; }
+    .card .card-image img {
+      width: 100%; }
+  .card .card-conteudo {
+    width: 90%;
+    padding-left: 1em; }
+
+.swiper-button-next, .swiper-button-prev {
+  width: 2%;
+  background-color: #AB8A3C;
+  border-radius: 100%;
+  padding: 0.5em 1.2em;
+  background-image: url(" ") !important;
+  margin-top: 7em;
+  position: absolute; }
+
+.swiper-button-next {
+  margin-right: 87%; }
+
 .footer {
   display: flex;
   height: 116px;

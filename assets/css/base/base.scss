@@ -29,6 +29,12 @@ h4{
     margin-bottom: -1em;
 }
 
+h5{
+    font: normal normal 600 12px/26px Montserrat;
+    color: $cor-destaque;
+    margin-bottom: -1em;
+}
+
 
 button{
     font: normal normal normal 14px/28px Montserrat;
@@ -38,4 +44,3 @@ p{
     font: normal normal bold 14px/17px Roboto;
     color: $cor-texto;
 }
-
